@@ -1,0 +1,69 @@
+function assembleTableCol() {
+    var thisCols = [];  //定义标题空间
+    $.ajax({
+        url: "/File/GetDataColName",
+        method: 'post',
+        dataType: 'json',
+        async: false,   // 重要，外赋值到responseData
+        success: function (res) {
+            thisCols = res.data;
+        }
+    });
+    return thisCols;  //注意结果为：array[0]=thisCols
+}
+function assembleTableData() {
+    var thisCols = [];  //定义标题空间
+    $.ajax({
+        url: "/File/GetDataName",
+        method: 'post',
+        dataType: 'json',
+        async: false,   // 重要，外赋值到responseData
+        success: function (res) {
+            thisCols = res.data;
+        }
+    });
+    return thisCols;  //注意结果为：array[0]=thisCols
+}
+layui.use(['table'], function () {
+    var table = layui.table;
+    //固定列
+    //表格数据tableData
+    //var tableData = [
+    //    {
+    //        "name": "詹溪"
+    //        , "age": 18
+    //        , "class": "高三（2）班"
+    //    },
+    //    {
+    //        "name": "徐柯"
+    //        , "age": 18
+    //        , "class": "高三（3）班"
+    //    },
+    //    {
+    //        "name": "蓝毅"
+    //        , "age": 17
+    //        , "class": "高三（3）班"
+    //    },
+    //    {
+    //        "name": "温邱"
+    //        , "age": 18
+    //        , "class": "高三（3）班"
+    //    }
+    //];
+    var tableData = assembleTableData();
+    //固定列二维数组
+    //var col = [[
+    //    { field: "name", title: "姓名" }
+    //    , { field: "age", title: "年龄" }
+    //    , { field: "class", title: "班级" }
+    //]];
+ 
+    var col = assembleTableCol();
+    //渲染table
+    table.render({
+        elem: "#file"
+        , data: tableData
+        , cols: col, page: true
+    });
+ 
+});
