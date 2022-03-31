@@ -1,0 +1,75 @@
+<body>
+
+    <div class="bigBox">
+
+        <div id="box"></div>
+
+    </div>
+
+    <script>
+
+        var box = document.getElementById('box')
+
+        var bigBox = document.getElementsByClassName('bigBox')[0]
+
+        box.onmousedown = function(){
+            box.onmousemove = function(e){
+                e = e || window.event
+
+                //获取大盒子的偏移
+
+                var bigx = bigBox.offsetLeft
+
+                var bigy = bigBox.offsetTop
+
+                //获取鼠标位置
+
+                var mouseX = e.pageX
+
+                var mouseY = e.pageY
+
+                //中心点要减去的宽高
+
+                var w = box.offsetWidth/2
+
+                var h = box.offsetHeight/2
+
+                //定位设置left值以及top值
+
+                var left = mouseX - w - bigx
+
+                var top = mouseY - h - bigy
+
+                this.style.left = left+'px'
+
+                this.style.top = top+'px'
+
+                //里面的盒子移动
+
+                var x = box.offsetLeft
+
+                var y = box.offsetTop
+
+                //区间设置
+
+                if(x<0){
+                    this.style.left = '0px'
+
+                }
+
+                if(y<0){
+                    this.style.top = '0px'
+
+                }
+
+                if(x>bigBox.offsetWidth-w*2){
+                    this.style.left = bigBox.offsetWidth-w*2 + 'px'
+
+                }
+
+                if(y>bigBox.offsetHeight-h*2){
+                    this.style.top = bigBox.offsetHeight-h*2 + 'px'
+
+                }
+
+            }
