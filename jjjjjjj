@@ -1,0 +1,3 @@
+>>> str = "python book" >>> str 'python book' >>> str.split(" ") ['python', 'book']
+# # python # PYTHON_VERSION=3.8.2 PYTHON_PORT=9100
+from PythonFiles import *  print(Python1.a) print(Python2.num1) #报错
