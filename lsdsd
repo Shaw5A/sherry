@@ -1,0 +1,55 @@
+import org.dom4j.Document;
+02
+import org.dom4j.DocumentException;
+03
+import org.dom4j.DocumentHelper;
+04
+import org.dom4j.Element;
+05
+ 
+06
+/**
+07
+ * @author 王良进
+08
+ * @ClassName test.java
+09
+ * @createTime 2021年11月19日 19:44:00
+10
+ */
+11
+public class test {
+12
+    public static void main(String[] args) throws DocumentException {
+13
+        String xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"  xmlns:tns=\"http://webservice/\"><soap:Body><TASK_CREATEResponse><success>true</success><data><taskId>222</taskId></data></TASK_CREATEResponse></soap:Body></soap:Envelope>";
+14
+        Document xmlDocument = DocumentHelper.parseText(xml);
+15
+        if(xmlDocument!=null){
+16
+            //获取根节点
+17
+            Element rootElement = xmlDocument.getRootElement();
+18
+ 
+19
+            //显示根节点的名字
+20
+            System.out.println(rootElement.getName());
+21
+             
+22
+            //获取根节点下的直接子节点的个数和名字
+23
+            Element e2 = rootElement.element("Body");
+24
+            Element e3 = e2.element("TASK_CREATEResponse");
+25
+            Element e4 = e3.element("data");
+26
+            String success = e3.element("success").getText().trim();
+27
+            String taskId = e4.element("taskId").getText().trim();
+28
+            System.out.println(taskId);
