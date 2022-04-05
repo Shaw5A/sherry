@@ -1,0 +1,37 @@
+@Test
+02
+ 
+03
+public void testMaxNum() {
+04
+ 
+05
+    //有n个正整数，将它们连接成一排，组成一个最大的多位整数
+06
+ 
+07
+    //12112错误
+08
+ 
+09
+    //12121正解
+10
+ 
+11
+//        int[] nums = {12, 121};
+12
+ 
+13
+    int[] nums = {12, 123};
+14
+ 
+15
+    String result = maxNum(nums);
+16
+ 
+17
+    System.out.println("组成最大整数:" + result);
+18
+ 
+19
+}
