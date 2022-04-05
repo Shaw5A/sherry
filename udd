@@ -1,0 +1,85 @@
+/**
+02
+ 
+03
+ * 根据给定的整数组成最大的多位数
+04
+ 
+05
+ * @param nums
+06
+ 
+07
+ */
+08
+ 
+09
+public String maxNum(int[] nums) {
+10
+ 
+11
+    String result = "";
+12
+ 
+13
+    for (int i = 0; i < nums.length; i++) {
+14
+ 
+15
+        String num1 = nums[i] + "";
+16
+ 
+17
+        for (int j = 1; j < nums.length; j++) {
+18
+ 
+19
+            String num2 = nums[j] + "";
+20
+ 
+21
+            if ((num1 + num2).compareTo(num2 + num1) < 0) {
+22
+ 
+23
+                int temp = nums[j];
+24
+ 
+25
+                nums[j] = nums[i];
+26
+ 
+27
+                nums[i] = temp;
+28
+ 
+29
+            }
+30
+ 
+31
+        }
+32
+ 
+33
+    }
+34
+ 
+35
+    for (int i = 0; i < nums.length; i++) {
+36
+ 
+37
+        result += nums[i];
+38
+ 
+39
+    }
+40
+ 
+41
+    return result;
+42
+ 
+43
+}
