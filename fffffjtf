@@ -1,0 +1,9 @@
+<dependency>
+2
+    <groupId>org.springframework.boot</groupId>
+3
+    <artifactId>spring-boot-starter-test</artifactId>
+4
+    <scope>test</scope>
+5
+</dependency>
