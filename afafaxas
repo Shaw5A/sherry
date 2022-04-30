@@ -1,0 +1,23 @@
+@SpringBootTest
+02
+public class ScrewtestApplicationTests {
+03
+ 
+04
+ 
+05
+    @Autowired
+06
+    ApplicationContext applicationContext;
+07
+ 
+08
+    @Test
+09
+    public void contextLoads() {
+10
+            ...
+11
+            ...
+12
+            ...
