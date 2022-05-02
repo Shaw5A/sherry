@@ -1,0 +1,25 @@
+import org.dom4j.Document;
+02
+import org.dom4j.DocumentException;
+03
+import org.dom4j.DocumentHelper;
+04
+import org.dom4j.Element;
+05
+ 
+06
+/**
+07
+ * @author 王良进
+08
+ * @ClassName test.java
+09
+ * @createTime 2021年11月19日 19:44:00
+10
+ */
+11
+public class test {
+12
+    public static void main(String[] args) throws DocumentException {
+13
+        String xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"  xmlns:tns=\"http://webservice/\"><soap:Body><TASK_CREATEResponse><success>true</success><data><taskId>222</taskId></data></TASK_CREATEResponse></soap:Body></soap:Envelope>";
