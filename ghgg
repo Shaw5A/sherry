@@ -1,0 +1,35 @@
+ Document xmlDocument = DocumentHelper.parseText(xml);
+15
+        if(xmlDocument!=null){
+16
+            //获取根节点
+17
+            Element rootElement = xmlDocument.getRootElement();
+18
+ 
+19
+            //显示根节点的名字
+20
+            System.out.println(rootElement.getName());
+21
+             
+22
+            //获取根节点下的直接子节点的个数和名字
+23
+            Element e2 = rootElement.element("Body");
+24
+            Element e3 = e2.element("TASK_CREATEResponse");
+25
+            Element e4 = e3.element("data");
+26
+            String success = e3.element("success").getText().trim();
+27
+            String taskId = e4.element("taskId").getText().trim();
+28
+            System.out.println(taskId);
+29
+        }
+30
+ 
+31
+    }
