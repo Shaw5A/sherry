@@ -1,0 +1,121 @@
+ <groupId>org.springframework</groupId>
+051
+    <artifactId>spring-expression</artifactId>
+052
+    <version>5.3.3</version>
+053
+  </dependency>
+054
+  <dependency>
+055
+    <groupId>aopalliance</groupId>
+056
+    <artifactId>aopalliance</artifactId>
+057
+    <version>1.0</version>
+058
+  </dependency>
+059
+  <dependency>
+060
+    <groupId>org.aspectj</groupId>
+061
+    <artifactId>aspectjweaver</artifactId>
+062
+    <version>1.9.5</version>
+063
+  </dependency>
+064
+  <!--springmvc-->
+065
+  <dependency>
+066
+    <groupId>org.springframework</groupId>
+067
+    <artifactId>spring-web</artifactId>
+068
+    <version>5.3.3</version>
+069
+  </dependency>
+070
+  <dependency>
+071
+    <groupId>org.springframework</groupId>
+072
+    <artifactId>spring-webmvc</artifactId>
+073
+    <version>5.3.3</version>
+074
+  </dependency>
+075
+  <!--MyBatis-->
+076
+  <dependency>
+077
+    <groupId>org.mybatis</groupId>
+078
+    <artifactId>mybatis</artifactId>
+079
+    <version>3.5.3</version>
+080
+  </dependency>
+081
+  <!--mybatis整合Spring-->
+082
+  <dependency>
+083
+    <groupId>org.mybatis</groupId>
+084
+    <artifactId>mybatis-spring</artifactId>
+085
+    <version>2.0.3</version>
+086
+  </dependency>
+087
+  <!--数据驱动依赖-->
+088
+  <dependency>
+089
+    <groupId>mysql</groupId>
+090
+    <artifactId>mysql-connector-java</artifactId>
+091
+    <version>5.1.47</version>
+092
+  </dependency>
+093
+  <!--数据源-->
+094
+  <dependency>
+095
+    <groupId>com.alibaba</groupId>
+096
+    <artifactId>druid</artifactId>
+097
+    <version>1.2.2</version>
+098
+  </dependency>
+099
+  <!--JSTL-->
+100
+  <dependency>
+101
+    <groupId>jstl</groupId>
+102
+    <artifactId>jstl</artifactId>
+103
+    <version>1.2</version>
+104
+  </dependency>
+105
+  <dependency>
+106
+    <groupId>taglibs</groupId>
+107
+    <artifactId>standard</artifactId>
+108
+    <version>1.1.2</version>
+109
+  </dependency>
+110
+  <!--文件上传-->
