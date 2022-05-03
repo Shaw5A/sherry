@@ -1,0 +1,97 @@
+<dependencies>
+002
+  <dependency>
+003
+    <groupId>junit</groupId>
+004
+    <artifactId>junit</artifactId>
+005
+    <version>4.11</version>
+006
+    <scope>test</scope>
+007
+  </dependency>
+008
+  <!--spring-->
+009
+  <dependency>
+010
+    <groupId>org.springframework</groupId>
+011
+    <artifactId>spring-context</artifactId>
+012
+    <version>5.3.3</version>
+013
+  </dependency>
+014
+  <dependency>
+015
+    <groupId>org.springframework</groupId>
+016
+    <artifactId>spring-core</artifactId>
+017
+    <version>5.3.3</version>
+018
+  </dependency>
+019
+  <dependency>
+020
+    <groupId>org.springframework</groupId>
+021
+    <artifactId>spring-beans</artifactId>
+022
+    <version>5.3.3</version>
+023
+  </dependency>
+024
+  <dependency>
+025
+    <groupId>org.springframework</groupId>
+026
+    <artifactId>spring-aop</artifactId>
+027
+    <version>5.3.3</version>
+028
+  </dependency>
+029
+  <dependency>
+030
+    <groupId>org.springframework</groupId>
+031
+    <artifactId>spring-jdbc</artifactId>
+032
+    <version>5.3.3</version>
+033
+  </dependency>
+034
+  <dependency>
+035
+    <groupId>org.springframework</groupId>
+036
+    <artifactId>spring-tx</artifactId>
+037
+    <version>5.3.3</version>
+038
+  </dependency>
+039
+  <dependency>
+040
+    <groupId>org.slf4j</groupId>
+041
+    <artifactId>jcl-over-slf4j</artifactId>
+042
+    <version>2.0.0-alpha0</version>
+043
+  </dependency>
+044
+  <dependency>
+045
+    <groupId>org.springframework</groupId>
+046
+    <artifactId>spring-aspects</artifactId>
+047
+    <version>5.3.3</version>
+048
+  </dependency>
+049
+  <dependency>
